@@ -17,6 +17,7 @@ public class ProductRepository {
         products.add(new Product(2, "Item 2", 217));
         products.add(new Product(3, "Item 3", 185));
         products.add(new Product(4, "Item 4", 815));
+        products.add(new Product(5, "Item 5", 538));
     }
 
     public Product findProduct (int id){
