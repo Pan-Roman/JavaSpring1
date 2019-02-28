@@ -3,6 +3,7 @@ package com.geekbrains.entities;
 public class Product {
     private int id;
     private String title;
+    private int cost;
 
     public Product() {
     }
@@ -13,7 +14,7 @@ public class Product {
         this.cost = cost;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -37,5 +38,5 @@ public class Product {
         this.cost = cost;
     }
 
-    private int cost;
+
 }

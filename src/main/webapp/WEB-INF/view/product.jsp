@@ -6,12 +6,12 @@
 
 <html>
     <head>
-        <title>Product list</title>
+        <title>Product</title>
     </head>
     <body>
-        <h1>Products llist</h1>
-        <c:forEach var="product" items="${products}">
-            <li>${product.title} price: $ ${product.cost}</li>
-        </c:forEach>
+        <h1>Product</h1>
+            <p>Product ID: ${product.id}</p>
+            <p>Product Title: ${product.title}</p>
+            <p>Product Price: $${product.cost}</p>
     </body>
 </html>

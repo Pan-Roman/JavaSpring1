@@ -26,7 +26,7 @@ public class ProductController {
         return "products-list";
     }
 
-    @RequestMapping("/showForm")
+    @RequestMapping("/newProduct")
     public String showSimpleForm(Model model) {
         Product product = new Product();
         model.addAttribute("product", product);
@@ -37,7 +37,7 @@ public class ProductController {
     public String addProduct(@ModelAttribute("product")Product product){
         productService.addProduct(product);
 //        model.addAttribute("product", product);
-        return "products-form-result";
+        return "redirect:/products/list";
     }
 
     @RequestMapping("/showProduct/{pid}")
